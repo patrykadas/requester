@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Payment link</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body ontouchstart="">
+
+
+    <!-- Choosing a currency after clicking a selector -->
+    <div class="currency-container">
+        <div class="header">
+            <div class="close">
+                <img src="img/close.svg" />
+            </div>
+            <div class="search">
+                <img src="img/search.svg" />
+            </div>
+        </div>
+        
+        <div class="tokens">
+            <h1 style="padding-left: 10px; margin-top: 30px;">Receive <span class="dollar" style="font-size: 28px;">$</span><span class="usd-value" style="font-size: 32px;">0</span> in</h1>
+            <div class="tokens-list">
+                <div class="token active">
+                    <img src="img/dai.svg">
+                    <div class="token-info">
+                        <div class="token-name">
+                            <h4 class="ticker">DAI</h4><span class="dot">·</span><h4 class="token-amount">155</h4>
+                        </div>
+                        <h5 class="token-description">Dai</h5>
+                    </div>
+                </div>
+                <div class="token">
+                    <img src="img/usdc.svg">
+                    <div class="token-info">
+                        <div class="token-name">
+                            <h4 class="ticker">USDC</h4><span class="dot">·</span><h4 class="token-amount">155</h4>
+                        </div>
+                        <h5 class="token-description">USDC</h5>
+                    </div>
+                </div>
+                <div class="token">
+                    <img src="img/ether.svg">
+                    <div class="token-info">
+                        <div class="token-name">
+                            <h4 class="ticker">ETH</h4><span class="dot">·</span><h4 class="token-amount">0.32</h4>
+                        </div>
+                        <h5 class="token-description">Ether</h5>
+                    </div>
+                </div>
+                <div class="token">
+                    <img src="img/omisego.svg">
+                    <div class="token-info">
+                        <div class="token-name">
+                            <h4 class="ticker">OMG</h4><span class="dot">·</span><h4 class="token-amount">250</h4>
+                        </div>
+                        <h5 class="token-description">OmiseGo</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Confirmation screen -->
+    <div class="confirmation">
+        <div class="header">
+            <div class="exit">
+                <img src="img/exit.svg" />
+            </div>
+        </div>
+        <div class="confirmation-content">
+            <div style="width: 100%;">
+                <div class="checkmark">
+                    <img src="img/checkmark.svg" />
+                </div>
+                <h1 class="congratulations-headline">Congratulations!</h1>
+                <p>Your link is ready to be sent to anyone.</p>
+                <div id="click-to-copy">
+                    <h3 class="link">awesome0x.com/C8dFl</h3>
+                    <h5>Click to copy</h5>
+                </div>
+                <div class="copied-to-clipboard">
+                    Copied to your clipboard!
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+            
+    <!-- First screen -->
+
+
+    <div class="master-container">
+
+
+        <div class="receive-container">
+            <h1 style="margin-bottom: 20px;">I want to receive</h1>
+            <div class="input-container">
+                <div class="usd">$</div>
+                <input class="amount" pattern="[0-9]*" type="number" placeholder="0" min="0">
+            </div>
+            <div class="dropdown-button">
+                <div class="logo">
+                    <img src="img/dai.svg" />
+                </div>
+                <div class="chosen-currency">
+                    <span style="color: #A6A6A6;">As</span>
+                    <span class="chosen-currency-amount" value="0"></span>
+                    <span>Dai</span>
+                </div>                   
+                <img class="chevron" src="img/ctrl-down.svg" />
+            </div>
+
+
+        </div>
+
+            <!-- 
+        <div class="textarea-container">
+            <textarea rows="3" placeholder="Add a thank you note"></textarea>
+        </div> -->
+
+        <div class="button-container">
+            <a href="" class="button disabled"><img src="img/faceid.svg" />Create a payment link</a>
+        </div>
+
+    </div>
+
+
+
+    <script src="index.js"></script>
+
+
+  </body>
+</html>
